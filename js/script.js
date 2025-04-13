@@ -39,7 +39,14 @@ tabButtons.forEach((button) => {
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
+    const targetId = this.getAttribute("href");
+    const targetElement = document.querySelector(targetId);
+
+    // Update browser history
+    history.pushState(null, "", targetId);
+
+    // Smooth scroll to target
+    targetElement.scrollIntoView({
       behavior: "smooth",
     });
   });
