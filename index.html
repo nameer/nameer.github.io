@@ -1,9 +1,549 @@
-<html>
-<head><title>Redirecting...</title></head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nameer P K | Backend & ML Engineer</title>
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- JavaScript -->
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="container">
+        <div class="logo">NPK</div>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">Hi, I'm Nameer P K</h1>
+          <h2 class="hero-subtitle">Backend Lead & ML Engineer</h2>
+          <p class="hero-description">
+            I specialize in building and scaling machine learning systems and
+            backend applications. Currently focused on productionizing ML
+            systems and leading backend development teams.
+          </p>
+          <a href="#contact" class="cta-button">Get In Touch</a>
+          <a href="#projects" class="cta-button">View Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Hello! I'm Nameer, a backend lead specializing in productionizing
+              machine learning systems with extensive experience in building
+              scalable web applications.
+            </p>
+            <p>
+              I enjoy creating efficient systems that solve real-world problems.
+              My experience spans from developing full-stack farming
+              applications to building pharmaceutical software products and
+              deploying machine learning microservices.
+            </p>
+            <p>
+              I'm passionate about designing well-architected systems, ensuring
+              code quality, and mentoring team members. My focus is on building
+              secure, scalable, and maintainable applications.
+            </p>
+            <div class="skills-list">
+              <span class="skill-item">Python</span>
+              <span class="skill-item">Deep Learning</span>
+              <span class="skill-item">FastAPI</span>
+              <span class="skill-item">React</span>
+              <span class="skill-item">Docker</span>
+              <span class="skill-item">AWS/Azure</span>
+              <span class="skill-item">GraphQL</span>
+              <span class="skill-item">SQL</span>
+            </div>
+          </div>
+          <div class="about-image">
+            <img
+              src="assets/images/dp.jpeg"
+              alt="Nameer P K"
+              class="about-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <div class="container">
+        <h2 class="section-title">Where I've Worked</h2>
+        <div class="experience-tabs">
+          <button class="tab-button active" data-tab="job-1">
+            Woolly Farms
+          </button>
+          <button class="tab-button" data-tab="job-2">Genpro (Lead)</button>
+          <button class="tab-button" data-tab="job-3">
+            Genpro (ML Engineer)
+          </button>
+          <button class="tab-button" data-tab="job-4">Kerala Police</button>
+        </div>
+
+        <div class="job-content active" id="job-1">
+          <h3 class="job-title">Sr. Software Engineer</h3>
+          <h4 class="job-company">Woolly Farms</h4>
+          <p class="job-duration">Aug 2022 - Present</p>
+          <div class="job-description">
+            <ul>
+              <li>
+                Technical lead building full stack farming application for
+                controlled environment farming operations
+              </li>
+              <li>Took product from prototype to production in 7 months</li>
+              <li>
+                Designed data pipelines for comprehensive farm data collection
+              </li>
+              <li>
+                Implemented REST API in FastAPI supporting incoming IoT sensor
+                data
+              </li>
+              <li>
+                Deployed scalable, containerized services with Docker and AWS
+              </li>
+              <li>
+                Implemented front-end from scratch with Redux state management
+              </li>
+              <li>
+                Established company guidelines for code quality, reviews and
+                testing
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="job-content" id="job-2">
+          <h3 class="job-title">Backend Team Lead</h3>
+          <h4 class="job-company">Genpro Research Inc.</h4>
+          <p class="job-duration">Apr 2022 - Aug 2022</p>
+          <div class="job-description">
+            <ul>
+              <li>
+                Led 9-member product engineering team across 3 customer-facing
+                pharmaceutical software products
+              </li>
+              <li>
+                Deployed and managed ML microservices for optimal request
+                latency and scalability
+              </li>
+              <li>
+                Ensured product customizability through configs, avoiding
+                multiple branch maintenance
+              </li>
+              <li>
+                Integrated Google Scholar search with automatic article fetching
+                and processing
+              </li>
+              <li>
+                Implemented authentication using Google, Microsoft, and Pfizer
+                SSO
+              </li>
+              <li>Set up weekly upskill sessions for team knowledge sharing</li>
+              <li>
+                Introduced efficient member onboarding protocol with 2-hour
+                setup time
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="job-content" id="job-3">
+          <h3 class="job-title">Machine Learning Engineer</h3>
+          <h4 class="job-company">Genpro Research Inc.</h4>
+          <p class="job-duration">Aug 2019 - Mar 2022</p>
+          <div class="job-description">
+            <ul>
+              <li>
+                Core contributor to a systematic literature review platform
+              </li>
+              <li>
+                Integrated PubMed search with automated article fetching and
+                indexing
+              </li>
+              <li>
+                Managed Postgres, Azure Blob, ElasticSearch, Celery, and Redis
+              </li>
+              <li>Containerized services for environment isolation</li>
+              <li>Implemented article citation and bibliography features</li>
+              <li>
+                Built real-time collaborative editor with commenting system
+              </li>
+              <li>
+                Created in-app real-time notification system with WebSockets
+              </li>
+              <li>
+                Developed natural language query system for pharmaceutical data
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="job-content" id="job-4">
+          <h3 class="job-title">Backend Engineer</h3>
+          <h4 class="job-company">
+            Grapnel Darknet Search, Kerala Police Cyberdome
+          </h4>
+          <p class="job-duration">Part-time Project</p>
+          <div class="job-description">
+            <ul>
+              <li>
+                Implemented GraphQL services for search engine capabilities
+              </li>
+              <li>
+                Built web search, image search, and reverse image search
+                functionality
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title">Skills & Tools</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-top">
+              <i class="fas fa-code folder-icon"></i>
+            </div>
+            <h3 class="project-title">Programming Languages</h3>
+            <p class="project-description">
+              Languages I've worked with extensively throughout my career.
+            </p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Java</span>
+              <span>Kotlin</span>
+              <span>JavaScript</span>
+              <span>TypeScript</span>
+              <span>PHP</span>
+              <span>C++</span>
+              <span>C</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-top">
+              <i class="fas fa-brain folder-icon"></i>
+            </div>
+            <h3 class="project-title">Machine Learning</h3>
+            <p class="project-description">
+              ML frameworks and technologies I specialize in.
+            </p>
+            <div class="project-tech">
+              <span>TensorFlow</span>
+              <span>PyTorch</span>
+              <span>Deep Learning</span>
+              <span>NumPy</span>
+              <span>Pandas</span>
+              <span>NLP</span>
+              <span>Computer Vision</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-top">
+              <i class="fas fa-server folder-icon"></i>
+            </div>
+            <h3 class="project-title">Backend Technologies</h3>
+            <p class="project-description">
+              Backend frameworks and tools I've mastered.
+            </p>
+            <div class="project-tech">
+              <span>FastAPI</span>
+              <span>GraphQL</span>
+              <span>Node.js</span>
+              <span>Celery</span>
+              <span>Redis</span>
+              <span>MySQL</span>
+              <span>PostgreSQL</span>
+              <span>ElasticSearch</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-top">
+              <i class="fas fa-laptop-code folder-icon"></i>
+            </div>
+            <h3 class="project-title">Frontend Technologies</h3>
+            <p class="project-description">
+              Frontend frameworks and libraries I work with.
+            </p>
+            <div class="project-tech">
+              <span>React</span>
+              <span>Next.js</span>
+              <span>Vue.js</span>
+              <span>Redux</span>
+              <span>MUI</span>
+              <span>Tailwind CSS</span>
+              <span>HTML/CSS</span>
+              <span>WebSockets</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-top">
+              <i class="fas fa-cloud folder-icon"></i>
+            </div>
+            <h3 class="project-title">DevOps & Cloud</h3>
+            <p class="project-description">
+              Infrastructure and deployment technologies I use.
+            </p>
+            <div class="project-tech">
+              <span>Docker</span>
+              <span>AWS</span>
+              <span>Azure</span>
+              <span>CI/CD</span>
+              <span>Git</span>
+              <span>Microservices</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-top">
+              <i class="fas fa-mobile-alt folder-icon"></i>
+            </div>
+            <h3 class="project-title">Mobile Development</h3>
+            <p class="project-description">Mobile development experience.</p>
+            <div class="project-tech">
+              <span>Android</span>
+              <span>Android Studio</span>
+              <span>Java</span>
+              <span>Kotlin</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">Some Things I've Built</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-top">
+              <i class="fas fa-seedling folder-icon"></i>
+              <div class="project-links">
+                <a href="#" aria-label="GitHub"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a href="#" aria-label="External Link"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <h3 class="project-title">Farming Management System</h3>
+            <p class="project-description">
+              Full-stack application for controlled environment farming
+              operations, integrating IoT sensors for comprehensive data
+              collection and farm management.
+            </p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>FastAPI</span>
+              <span>React</span>
+              <span>Redux</span>
+              <span>Docker</span>
+              <span>AWS</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-top">
+              <i class="fas fa-book-medical folder-icon"></i>
+              <div class="project-links">
+                <a href="#" aria-label="GitHub"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a href="#" aria-label="External Link"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <h3 class="project-title">Literature Review Platform</h3>
+            <p class="project-description">
+              System for scientific literature review with automated article
+              fetching, indexing, and collaboration tools for researchers.
+            </p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>ElasticSearch</span>
+              <span>PostgreSQL</span>
+              <span>Celery</span>
+              <span>Azure</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-top">
+              <i class="fas fa-users folder-icon"></i>
+              <div class="project-links">
+                <a href="#" aria-label="GitHub"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a href="#" aria-label="External Link"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <h3 class="project-title">Real-time Collaborative Editor</h3>
+            <p class="project-description">
+              Node.js-backed collaborative document editor with commenting and
+              suggesting system for pharmaceutical research.
+            </p>
+            <div class="project-tech">
+              <span>Node.js</span>
+              <span>WebSockets</span>
+              <span>React</span>
+              <span>MongoDB</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-top">
+              <i class="fas fa-search folder-icon"></i>
+              <div class="project-links">
+                <a href="#" aria-label="GitHub"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a href="#" aria-label="External Link"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <h3 class="project-title">Darknet Search Engine</h3>
+            <p class="project-description">
+              GraphQL services for web search, image search, and reverse image
+              search for Kerala Police Cyberdome.
+            </p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>GraphQL</span>
+              <span>ElasticSearch</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-top">
+              <i class="fas fa-code-branch folder-icon"></i>
+              <div class="project-links">
+                <a href="#" aria-label="GitHub"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a href="#" aria-label="External Link"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <h3 class="project-title">Screenshot to Code</h3>
+            <p class="project-description">
+              Combined CNN and LSTM model for converting UI screenshots to
+              HTML/CSS code, automating frontend development.
+            </p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>TensorFlow</span>
+              <span>CNN</span>
+              <span>LSTM</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-top">
+              <i class="fas fa-question-circle folder-icon"></i>
+              <div class="project-links">
+                <a href="#" aria-label="GitHub"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a href="#" aria-label="External Link"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <h3 class="project-title">Natural Language QA System</h3>
+            <p class="project-description">
+              Question answering system trained on SQuAD and MARCO datasets,
+              ranked in top 100 performers.
+            </p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>NLP</span>
+              <span>PyTorch</span>
+              <span>BERT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <div class="contact">
+          <h2 class="contact-title">Get In Touch</h2>
+          <h3 class="contact-subtitle">
+            Let's build something amazing together
+          </h3>
+          <p class="contact-text">
+            I'm currently looking for new opportunities. Whether you have a
+            question or just want to say hi, my inbox is always open!
+          </p>
+          <a href="mailto:nameerpk.95@gmail.com" class="cta-button"
+            >Say Hello</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="social-links">
+        <a
+          href="https://github.com/nameer"
+          class="social-link"
+          aria-label="GitHub"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+        <a
+          href="https://linkedin.com/in/pknameer"
+          class="social-link"
+          aria-label="LinkedIn"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+      <p>Built with ❤️ by Nameer P K</p>
+    </footer>
+  </body>
 </html>
-<body>
-<h5>Redirecting...</h5>
-</body>
-<script>
-window.location.href = "https://in.linkedin.com/in/pknameer";
-</script>
