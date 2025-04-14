@@ -222,6 +222,13 @@ section {
   filter: none;
 }
 
+/* Add media query for touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .about-img {
+    filter: none; /* Remove grayscale on touch devices */
+  }
+}
+
 /* Experience Section */
 .experience-tabs {
   display: flex;
