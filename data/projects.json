@@ -1,0 +1,68 @@
+{
+  "projects": [
+    {
+      "icon": "fas fa-chart-line",
+      "title": "Brevian - Sales Intelligence Platform",
+      "description": "Sales intelligence platform for meeting preparation, post-meeting insights, and deal tracking with MEDDPICC framework. Features CRM synchronization, meeting bot management, and multi-source integrations.",
+      "technologies": ["FastAPI", "Next.js", "Temporal", "OAuth", "Gong", "Fathom"],
+      "githubUrl": "",
+      "websiteUrl": "https://www.brevian.ai/"
+    },
+    {
+      "icon": "fas fa-leaf",
+      "title": "SustainFoodIQ",
+      "description": "Food supply chain sustainability platform leveraging AI to optimize waste management. Features multi-tier supplier sustainability scoring, cascading recalculation pipeline, and aggressive caching strategies.",
+      "technologies": ["NestJS", "FastAPI", "AWS SQS", "Docker", "AI/ML"],
+      "githubUrl": "",
+      "websiteUrl": "https://sustainfoodiq.com/"
+    },
+    {
+      "icon": "fas fa-seedling",
+      "title": "Farming Management System",
+      "description": "Full-stack application for controlled environment farming operations, integrating IoT sensors for comprehensive data collection and farm management.",
+      "technologies": ["Python", "FastAPI", "React", "Redux", "Docker", "AWS"],
+      "githubUrl": "",
+      "websiteUrl": ""
+    },
+    {
+      "icon": "fas fa-book-medical",
+      "title": "Literature Review Platform",
+      "description": "System for scientific literature review with automated article fetching, indexing, and collaboration tools for researchers.",
+      "technologies": ["Python", "ElasticSearch", "PostgreSQL", "Celery", "Azure"],
+      "githubUrl": "",
+      "websiteUrl": ""
+    },
+    {
+      "icon": "fas fa-users",
+      "title": "Real-time Collaborative Editor",
+      "description": "Node.js-backed collaborative document editor with commenting and suggesting system for pharmaceutical research.",
+      "technologies": ["Node.js", "WebSockets", "React", "MongoDB"],
+      "githubUrl": "",
+      "websiteUrl": ""
+    },
+    {
+      "icon": "fas fa-search",
+      "title": "Darknet Search Engine",
+      "description": "GraphQL services for web search, image search, and reverse image search for Kerala Police Cyberdome.",
+      "technologies": ["Python", "GraphQL", "ElasticSearch"],
+      "githubUrl": "https://github.com/kp-grapnel",
+      "websiteUrl": ""
+    },
+    {
+      "icon": "fas fa-code-branch",
+      "title": "Screenshot to Code",
+      "description": "Combined CNN and LSTM model for converting UI screenshots to HTML/CSS code, automating frontend development.",
+      "technologies": ["Python", "TensorFlow", "CNN", "LSTM"],
+      "githubUrl": "",
+      "websiteUrl": ""
+    },
+    {
+      "icon": "fas fa-question-circle",
+      "title": "Natural Language QA System",
+      "description": "Question answering system trained on SQuAD and MARCO datasets, ranked in top 100 performers.",
+      "technologies": ["Python", "NLP", "PyTorch", "BERT"],
+      "githubUrl": "",
+      "websiteUrl": ""
+    }
+  ]
+}

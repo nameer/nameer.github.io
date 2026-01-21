@@ -1,0 +1,40 @@
+{
+  "skills": [
+    {
+      "icon": "fas fa-code",
+      "title": "Programming Languages",
+      "description": "Languages I've worked with extensively throughout my career.",
+      "technologies": ["Python", "Java", "Kotlin", "JavaScript", "TypeScript", "PHP", "C++", "C"]
+    },
+    {
+      "icon": "fas fa-brain",
+      "title": "Machine Learning",
+      "description": "ML frameworks and technologies I specialize in.",
+      "technologies": ["TensorFlow", "PyTorch", "Deep Learning", "NumPy", "Pandas", "NLP", "Computer Vision"]
+    },
+    {
+      "icon": "fas fa-server",
+      "title": "Backend Technologies",
+      "description": "Backend frameworks and tools I've mastered.",
+      "technologies": ["FastAPI", "NestJS", "GraphQL", "Node.js", "Celery", "Temporal", "Redis", "MySQL", "PostgreSQL", "ElasticSearch"]
+    },
+    {
+      "icon": "fas fa-laptop-code",
+      "title": "Frontend Technologies",
+      "description": "Frontend frameworks and libraries I work with.",
+      "technologies": ["React", "Next.js", "Redux", "Zustand", "Axios", "MUI", "Tailwind CSS", "HTML/CSS", "WebSockets"]
+    },
+    {
+      "icon": "fas fa-cloud",
+      "title": "DevOps & Cloud",
+      "description": "Infrastructure and deployment technologies I use.",
+      "technologies": ["Docker", "AWS", "Azure", "CI/CD", "Git", "Microservices"]
+    },
+    {
+      "icon": "fas fa-mobile-alt",
+      "title": "Mobile Development",
+      "description": "Mobile development experience.",
+      "technologies": ["Android", "Android Studio", "Java", "Kotlin"]
+    }
+  ]
+}

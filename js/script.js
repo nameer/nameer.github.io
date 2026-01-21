@@ -51,3 +51,81 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     });
   });
 });
+
+// Load Projects from JSON
+async function loadProjects() {
+  try {
+    const response = await fetch("data/projects.json");
+    const data = await response.json();
+    const projectsGrid = document.querySelector("#projects .projects-grid");
+
+    projectsGrid.innerHTML = data.projects
+      .map(
+        (project) => `
+      <div class="project-card">
+        <div class="project-top">
+          <i class="${project.icon} folder-icon"></i>
+          <div class="project-links">
+            ${
+              project.githubUrl
+                ? `<a href="${project.githubUrl}" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>`
+                : ""
+            }
+            ${
+              project.websiteUrl
+                ? `<a href="${project.websiteUrl}" aria-label="External Link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>`
+                : ""
+            }
+          </div>
+        </div>
+        <h3 class="project-title">${project.title}</h3>
+        <p class="project-description">
+          ${project.description}
+        </p>
+        <div class="project-tech">
+          ${project.technologies.map((tech) => `<span>${tech}</span>`).join("")}
+        </div>
+      </div>
+    `
+      )
+      .join("");
+  } catch (error) {
+    console.error("Error loading projects:", error);
+  }
+}
+
+// Load Skills from JSON
+async function loadSkills() {
+  try {
+    const response = await fetch("data/skills.json");
+    const data = await response.json();
+    const skillsGrid = document.querySelector("#skills .projects-grid");
+
+    skillsGrid.innerHTML = data.skills
+      .map(
+        (skill) => `
+      <div class="project-card">
+        <div class="project-top">
+          <i class="${skill.icon} folder-icon"></i>
+        </div>
+        <h3 class="project-title">${skill.title}</h3>
+        <p class="project-description">
+          ${skill.description}
+        </p>
+        <div class="project-tech">
+          ${skill.technologies.map((tech) => `<span>${tech}</span>`).join("")}
+        </div>
+      </div>
+    `
+      )
+      .join("");
+  } catch (error) {
+    console.error("Error loading skills:", error);
+  }
+}
+
+// Load data on page load
+document.addEventListener("DOMContentLoaded", () => {
+  loadProjects();
+  loadSkills();
+});
