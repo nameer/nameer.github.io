@@ -178,6 +178,8 @@ section {
   padding-left: 1.5rem;
   color: var(--text-secondary);
   font-size: 0.9rem;
+  display: flex;
+  align-items: center;
 }
 
 .skill-item::before {
@@ -186,6 +188,9 @@ section {
   left: 0;
   color: var(--accent);
   font-size: 1.2rem;
+  line-height: 1;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .about-image {
@@ -286,6 +291,8 @@ section {
   padding-left: 1.5rem;
   margin-bottom: 0.8rem;
   color: var(--text-secondary);
+  display: flex;
+  align-items: flex-start;
 }
 
 .job-description li::before {
@@ -294,6 +301,8 @@ section {
   left: 0;
   color: var(--accent);
   font-size: 1.2rem;
+  line-height: 1;
+  top: 0.1em;
 }
 
 /* Projects Section */
@@ -317,6 +326,7 @@ section {
 .project-top {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 2rem;
 }
 
@@ -327,6 +337,7 @@ section {
 
 .project-links {
   display: flex;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -391,6 +402,7 @@ footer {
 .social-links {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1.5rem;
   margin-bottom: 1.5rem;
 }
