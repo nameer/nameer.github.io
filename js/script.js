@@ -1,3 +1,11 @@
+function sitePath(path) {
+  const base =
+    document.querySelector('meta[name="site-baseurl"]')?.getAttribute("content") ??
+    "";
+  const normalized = path.startsWith("/") ? path : `/${path}`;
+  return (base || "") + normalized;
+}
+
 // Mobile Navigation
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
@@ -55,7 +63,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 // Load Projects from JSON
 async function loadProjects() {
   try {
-    const response = await fetch("data/projects.json");
+    const response = await fetch(sitePath("/data/projects.json"));
     const data = await response.json();
     const projectsGrid = document.querySelector("#projects .projects-grid");
 
@@ -97,7 +105,7 @@ async function loadProjects() {
 // Load Skills from JSON
 async function loadSkills() {
   try {
-    const response = await fetch("data/skills.json");
+    const response = await fetch(sitePath("/data/skills.json"));
     const data = await response.json();
     const skillsGrid = document.querySelector("#skills .projects-grid");
 

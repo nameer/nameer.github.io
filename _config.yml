@@ -1,0 +1,17 @@
+# Jekyll — https://jekyllrb.com/docs/configuration/
+# GitHub Pages uses these settings when building the site.
+
+title: Nameer P K
+description: Technical Lead portfolio
+
+# User/organization site at https://<user>.github.io — served from repo root
+baseurl: ""
+url: ""
+
+markdown: kramdown
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - data/README.md

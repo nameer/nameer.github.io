@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    {% include nav.html %}
+    {{ content }}
+    {% include footer.html %}
+    {% if page.home %}
+    <script src="{{ '/js/script.js' | relative_url }}" defer></script>
+    {% endif %}
+    {% if page.error_page %}
+    <script>
+      (function () {
+        var hamburger = document.querySelector(".hamburger");
+        var navLinks = document.querySelector(".nav-links");
+        var navLinksItems = document.querySelectorAll(".nav-links a");
+        if (!hamburger || !navLinks) return;
+        hamburger.addEventListener("click", function () {
+          navLinks.classList.toggle("active");
+          hamburger.innerHTML = navLinks.classList.contains("active")
+            ? '<i class="fas fa-times"></i>'
+            : '<i class="fas fa-bars"></i>';
+        });
+        navLinksItems.forEach(function (item) {
+          item.addEventListener("click", function () {
+            navLinks.classList.remove("active");
+            hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+          });
+        });
+      })();
+    </script>
+    {% endif %}
+  </body>
+</html>

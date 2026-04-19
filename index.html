@@ -1,43 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nameer P K | Technical Lead</title>
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="npk Portfolio" />
-    <!-- Manifest -->
-    <link rel="manifest" href="/site.webmanifest" />
-    <!-- CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-    <!-- JavaScript -->
-    <script src="js/script.js" defer></script>
-  </head>
-  <body>
-    <!-- Navigation -->
-    <nav>
-      <div class="container">
-        <div class="logo">NPK</div>
-        <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
-        </div>
-        <div class="hamburger">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-    </nav>
+---
+layout: default
+title: Nameer P K | Technical Lead
+home: true
+---
 
     <!-- Hero Section -->
     <section class="hero">
@@ -91,7 +56,7 @@
           </div>
           <div class="about-image">
             <img
-              src="assets/images/dp.jpeg"
+              src="{{ '/assets/images/dp.jpeg' | relative_url }}"
               alt="Nameer P K"
               class="about-img"
             />
@@ -474,26 +439,3 @@
         </div>
       </div>
     </section>
-
-    <!-- Footer -->
-    <footer>
-      <div class="social-links">
-        <a
-          href="https://github.com/nameer"
-          class="social-link"
-          aria-label="GitHub"
-        >
-          <i class="fab fa-github"></i>
-        </a>
-        <a
-          href="https://linkedin.com/in/pknameer"
-          class="social-link"
-          aria-label="LinkedIn"
-        >
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </div>
-      <p>Built with ❤️ by Nameer P K</p>
-    </footer>
-  </body>
-</html>
