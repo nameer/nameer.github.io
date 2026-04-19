@@ -115,6 +115,20 @@ nav .container {
   margin-bottom: 2rem;
 }
 
+/* 404 page */
+.error-hero {
+  max-width: 560px;
+}
+
+.error-code {
+  font-size: clamp(4rem, 12vw, 6.5rem);
+  font-weight: 700;
+  line-height: 1;
+  color: rgba(100, 255, 218, 0.35);
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.02em;
+}
+
 .cta-button {
   background-color: transparent;
   color: var(--accent);
